@@ -3,39 +3,87 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    text-decoration: none;
+    /* text-decoration: none;
     list-style: none;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; */
 }
 
-:root{
-    --bg-color: #2a2a2a;
-    --second-bg-color: #202020;
-    --text-color: #fff;
-    --second-color: #ccc;
-    --main-color: #ff4d05;
-    --big-font: 5rem;
-    --h2-font: 3rem;
-    --p-font: 1.1rem;
-}
-
-body{
-    background: var(--bg-color);
-    color: var(--text-color);
-}
-
-header{
-    position: fixed;
+.hero{
+    height: 100vh;
     width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
+    /* background-color: #1a1a1a; */
+    background-image: url(/images/home.png);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+
+
+}
+
+.logo{
+    width: 90px;
+    height: auto;
+    cursor:pointer;
+}
+
+nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
-    padding: 22px 15%;
-    border-bottom: 1px solid transparent;
-    transition: all .45s ease;
+    padding-top: 30px;
+    padding-left: 12%;
+    padding-right: 12%;
+    position: relative;
+    z-index: 5;
+} 
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 25px;
+    z-index: 7;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ADADAD;
+    font-weight: 600;
+    font-size: 15px;
+}
+nav ul li a:hover{
+
+color: #DF7C65;
+    /* background: linear-gradient(180deg, #FF1448 0%, #FF6A69 50%, #FEA994 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent; */
+    transition: .3s;
+}
+
+.main-text{
+    position: absolute;
+    top:50%;
+    left:12%;
+    transform: translateY(-50%);
+}
+
+.main-text h1{
+
+    font: weight 600px; ;
+    font-size:32px ;
+    color: #E0DCDC;
+}
+.main-text h1 h{
+
+    color: #DF7C65;
+    /* background: linear-gradient(180deg, #FF1448 0%, #FF6A69 50%, #FEA994 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent; */
+}
+
+.main-text h2{
 
 }
