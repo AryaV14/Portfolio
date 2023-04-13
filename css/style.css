@@ -36,58 +36,7 @@ nav{
     position: relative;
     z-index: 5;
 } 
-<<<<<<< HEAD
 
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 0px 25px;
-    z-index: 7;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: #ADADAD;
-    font-weight: 600;
-    font-size: 15px;
-}
-nav ul li a:hover{
-
-color: #DF7C65;
-    /* background: linear-gradient(180deg, #FF1448 0%, #FF6A69 50%, #FEA994 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent; */
-    transition: .3s;
-}
-
-.main-text{
-    position: absolute;
-    top:50%;
-    left:12%;
-    transform: translateY(-50%);
-}
-
-.main-text h1{
-
-    font: weight 600px; ;
-    font-size:32px ;
-    color: #E0DCDC;
-}
-.main-text h1 h{
-
-    color: #DF7C65;
-    /* background: linear-gradient(180deg, #FF1448 0%, #FF6A69 50%, #FEA994 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent; */
-}
-
-.main-text h2{
-=======
->>>>>>> 2d062ad4d9e7210e59ffbc09bb4618b987d28c93
 
 nav ul li{
     list-style: none;
