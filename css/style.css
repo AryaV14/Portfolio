@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    
     /* text-decoration: none;
     list-style: none;
     scroll-behavior: smooth; */
@@ -46,6 +46,8 @@ nav ul li{
 }
 
 nav ul li a{
+   
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: #ADADAD;
     font-weight: 600;
@@ -70,10 +72,10 @@ text-fill-color: transparent; */
 }
 
 .main-text h1{
-
+    font-family: 'Roboto', sans-serif;
     font: weight 600px; ;
     font-size:32px ;
-    color: #E0DCDC;
+    color: #A3A3A3;
 }
 .main-text h1 h{
 
@@ -86,5 +88,19 @@ text-fill-color: transparent; */
 }
 
 .main-text h2{
-
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 75px;
+    color: #e0dcdc;
+}
+.main-text p{
+    
+   
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #8f8f8f;
 }
