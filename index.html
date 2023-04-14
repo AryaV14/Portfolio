@@ -28,7 +28,7 @@
     <nav>
         <img src="images/logo.png" class="logo">
         <ul class="navlist">
-            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#about">About Me</a></li>
@@ -37,17 +37,25 @@
     </nav>
 
     <div class="main-text">
-        <h1>Hi, I’m <h>Arya Vijayan</h>. I'm a </h1><h2><span>UI/UX DESIGNER</span></h2>
-        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat laudantium voluptatum, quia nesciunt, sapiente corrupti provident ab vel a, libero laboriosam sequi enim dolore non quas tempore. Facilis, alias veniam.</p>
+        <h1>Hi, I’m <h>Arya Vijayan</h>. I'm a </h1><h2><span class="input"></span></h2>
+        <!-- <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat laudantium voluptatum, quia nesciunt, sapiente corrupti provident ab vel a, libero laboriosam sequi enim dolore non quas tempore. Facilis, alias veniam.</p> -->
        
-        <button type="button">contact me</button> <br>
+        <button type="button">Contact Me<img src="images/right-arrow.png"></button> 
         
       
 
     </div>
 </section>
+<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed(".input",{
+        strings:["UI/UX DESIGNER","DEVELOPER","ILLUSTRATOR"],
+        typeSpeed: 120,
+        backSpeed: 50,
+        loop: true
+    })
     
-
+</script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
