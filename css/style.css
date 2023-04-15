@@ -2,10 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+    /* overflow: hidden; */
+    /* scroll-behavior: smooth; */
     /* text-decoration: none;
     list-style: none;
-    scroll-behavior: smooth; */
+     */
+}
+body{
+    background: #0a0a0a;
+   
 }
 
 .hero{
@@ -30,11 +35,13 @@
 nav{
     display: flex;
     align-items: center;
+    width:100%;
     justify-content: space-between;
     padding-top: 10px;
     padding-left: 5%;
     padding-right: 5%;
-    position: relative;
+    position: fixed;
+    background: transparent;
     z-index: 5;
 } 
 
@@ -148,4 +155,86 @@ button{
      display:flex;
      align-items: center;
      justify-content: space-between;
+ }
+
+ .services{
+    height: 100vh;
+    width: 100%;
+    background-color: #0f0f0f;
+    position: relative;
+
+ }
+ .organize{
+
+     padding-left:10%;
+     padding-right: 10%;
+     padding-top:8%;
+ }
+
+ .title{
+    position:relative;
+    text-align: center;
+ }
+ .title h2{
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    color: #e0dcdc;
+   
+ }
+ .title h4{
+     color:#15b85e;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 24px;
+     font-weight: 300px;
+ }
+
+ .services-content{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+ .box{
+     padding:45px;
+     background: #1b1b1b;
+     border-top:5px solid transparent;
+     border-radius: 0.5rem;
+     transition: all 0.40s ease;
+     cursor:pointer;
+ }
+ .box img{
+    width: 60px;
+    height: auto;
+ }
+
+ .box h3{
+     font-family: 'Montserrat', sans-serif;
+     color:#e0dcdc ;
+     font-size: 24px;
+     font-weight: 600;
+     margin: 15px 0;
+     transition: all .40s ease;
+ }
+
+ .box p{
+    font-family: 'Roboto', sans-serif;
+     color: #ADADAD;
+     font-size: 14px;
+     line-height: 25px;
+ }
+
+ .box:hover{
+     transform: scale(1.01) translateY(-5px);
+     border-top: 5px solid #15b85e;
+ }
+
+ .box:hover h3{
+    color:#15b85e;
  }
