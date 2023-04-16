@@ -21,9 +21,6 @@ body{
     background-position: top center;
     position: relative;
     background-attachment: fixed; /*cause the parallax like effect*/
-    
-
-
 }
 
 .logo{
