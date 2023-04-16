@@ -53,15 +53,15 @@ nav ul li{
 
 
 nav ul li a{
-   
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: #ADADAD;
     font-weight: 600;
     font-size: 15px;
 }
-nav ul li a:hover{
 
+
+nav ul li a:hover{
 color: #15b85e;
     /* background: linear-gradient(180deg, #FF1448 0%, #FF6A69 50%, #FEA994 100%);
 -webkit-background-clip: text;
@@ -81,15 +81,14 @@ text-fill-color: transparent; */
 
 
 .main-text h1{
-   
     font-family: 'Roboto', sans-serif;
     font: weight 600px; ;
     font-size:32px ;
     color: #A3A3A3;
 }
-.main-text h1 h{
 
-    color: #15b85e;
+.main-text h1 h{
+   color: #15b85e;
     /* background: linear-gradient(180deg, #FF1448 0%, #FF6A69 50%, #FEA994 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -99,13 +98,14 @@ text-fill-color: transparent; */
  
 /* typing text */
 .main-text h2{
-    
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 90px;
     color: #e0dcdc;
 }
+
+
 /* .main-text p{
     
    
@@ -117,10 +117,14 @@ text-fill-color: transparent; */
     color: #8f8f8f;
 } */
 
+/* button group */
 .button{
     display: flex;
     gap: 0.5rem;
 }
+
+
+/* contact btn */
 .btn1{
     width: 170px;
     height: 50px;
@@ -139,6 +143,8 @@ text-fill-color: transparent; */
     transition: 0.4s;
   
 }
+
+/* download cv btn */
 .btn2{
     width: 170px;
     height: 50px;
@@ -182,8 +188,8 @@ text-fill-color: transparent; */
     width: 100%;
     background-color: #0f0f0f;
     position: relative;
-
  }
+
  .organize{
 
      padding-left:10%;
@@ -195,15 +201,15 @@ text-fill-color: transparent; */
     position:relative;
     text-align: center;
  }
- .title h2{
 
+ .title h2{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
     color: #e0dcdc;
-   
  }
+
  .title h4{
      color:#15b85e;
      font-family: 'Montserrat', sans-serif;
@@ -211,9 +217,9 @@ text-fill-color: transparent; */
      font-weight: 300px;
  }
 
- .services-content{
 
-    display: grid;
+ .services-content{
+     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     align-items: center;
     text-align: center;
@@ -229,6 +235,8 @@ text-fill-color: transparent; */
      transition: all 0.40s ease;
      cursor:pointer;
  }
+
+
  .box img{
     width: 60px;
     height: auto;
