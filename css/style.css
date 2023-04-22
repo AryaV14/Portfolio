@@ -29,7 +29,7 @@ body{
     cursor: pointer;
 }
 
-nav{
+#nav1{
     display: flex;
     align-items: center;
     width:100%;
@@ -43,7 +43,7 @@ nav{
 } 
 
 
-nav ul li{
+#nav1 ul li{
     list-style: none;
     display: inline-block;
     padding: 0px 25px;
@@ -52,7 +52,7 @@ nav ul li{
 
 
 
-nav ul li a{
+#nav1 ul li a{
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: #ADADAD;
@@ -61,7 +61,7 @@ nav ul li a{
 }
 
 
-nav ul li a:hover{
+#nav1 ul li a:hover{
 color: #15b85e;
     /* background: linear-gradient(180deg, #FF1448 0%, #FF6A69 50%, #FEA994 100%);
 -webkit-background-clip: text;
@@ -133,6 +133,7 @@ text-fill-color: transparent; */
     padding: 12px 10px;
     border: none;
     color:Black;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     letter-spacing: 1px;
     border-radius: 8px;
@@ -149,6 +150,7 @@ text-fill-color: transparent; */
     width: 170px;
     height: 50px;
     margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     letter-spacing: 1px;
     cursor: pointer;
@@ -157,6 +159,7 @@ text-fill-color: transparent; */
     border-radius: 8px;
     color: #15b85e;
     transition: none;
+    
 }
 
 .btn1 img{
@@ -211,7 +214,7 @@ text-fill-color: transparent; */
  }
 
  .title h4{
-     color:#15b85e;
+     color:#1b9b55;
      font-family: 'Montserrat', sans-serif;
      font-size: 24px;
      font-weight: 300px;
@@ -263,7 +266,143 @@ text-fill-color: transparent; */
      border-top: 5px solid #15b85e;
  }
 
- 
+
  .box:hover h3{
     color:#15b85e;
  }
+
+
+ .portfolio{
+    height: 100vh;
+    width: 100%;
+    /* background-color: #2c2b2b; */
+    background-image: url(/images/portfolio_bg.png);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    background-attachment: fixed; 
+ }
+ 
+ 
+#nav2{
+    position: relative;
+    max-width: 540px;
+    width:100%;
+    background: transparent;
+    border: 2px solid #363636;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    margin: 50px auto;
+ }
+#nav2 label{
+      display:block;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+      font-size: 20px;
+      font-family: 'Roboto', sans-serif;
+      color: rgba(255, 255, 255, 0.367) ;
+      z-index: 1;
+      position: relative;
+    }
+
+    #nav2 .slider{
+    position: absolute;
+    height: 100%;
+    width: 33.33%;
+    background: #474747;
+    border-radius: 5px;
+    z-index: 0;
+    left: 33.33%;
+    bottom: 0;
+    transition: all 0.3s ease;
+
+}
+#nav2 label:hover{
+    color: #4b4a4a;
+}
+
+#design:checked ~ #nav2 .slider{
+    left: 0;
+}
+#project:checked ~ #nav2 .slider{
+    left: 33.33%;
+}
+#artwork:checked ~ #nav2 .slider{
+    left: 66.66%;
+}
+
+#design:checked ~ #nav2 label.design,
+#project:checked ~ #nav2 label.project,
+#artwork:checked ~ #nav2 label.artwork{
+    color: rgb(0, 0, 0);
+}
+input[type="radio"]{
+    display: none;
+}
+
+ /* .p-btns {
+    
+    justify-content: center;
+    gap: 0.5rem;
+    
+}
+
+.p-btn {
+    position: relative;
+    width: 170px;
+    height: 40px;
+    margin-top: 40px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #474747;
+    border-radius: 5px;
+    text-align: center;  
+    padding-top: 8px;
+    top:50%;
+    transform: translateY(-50%); 
+
+}
+.p-btn a{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    color: #6b6b6b;
+    font-size: 18px;
+    
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.p-btn:hover{
+    background:#1b9b55;
+    border:none;
+    /* /* border: 2px solid #bebebe;  */
+    /* color: #000000;
+} 
+
+.p-btn:hover a{
+    background:#1b9b55;
+    border:none;
+    /* /* border: 2px solid #bebebe;  */
+    /* color: #000000;
+} 
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+.portfolio-content img{
+    width: 400px;
+    height: auto;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+}
+ */ 
