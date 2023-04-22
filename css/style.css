@@ -344,7 +344,19 @@ text-fill-color: transparent; */
 input[type="radio"]{
     display: none;
 }
+.content{
+    display: none;
+}
 
+#design:checked ~ .content_1{
+    display: block;
+}
+#project:checked ~ .content_2{
+    display: block;
+}
+#artwork:checked ~ .content_3{
+    display: block;
+}
  /* .p-btns {
     
     justify-content: center;
