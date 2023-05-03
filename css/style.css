@@ -275,8 +275,7 @@ text-fill-color: transparent; */
  .portfolio{
     height: 100vh;
     width: 100%;
-    background-color: #d8d1c2;
-    background-image: url(/images/Portfolio_bg.jpg);
+/*     background-image: url(/images/Portfolio_bg.jpg); */
     background-size: cover;
     background-position: top center;
     position: relative;
