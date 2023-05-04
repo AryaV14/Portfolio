@@ -349,13 +349,94 @@ input[type="radio"]{
 }
 
 #design:checked ~ .content_1{
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5rem;
 }
-#project:checked ~ .content_2{
-    display: block;
+#project:checked ~ .content_2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+ .pfbox{
+    width: 100%;
+    /* height: auto; */
+    border-radius: 1rem;
+    box-shadow: 0 0 5rem #000000;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+.pfbox img{
+width: 100%;
+transition: .5s ease;
+}
+.pfbox:hover img{
+   transform: scale(1.1);
+}
+.pfbox .layer{
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: linear-gradient(rgba(0,0,0,.8), #15b85e);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ text-align: center;
+ padding: 0 2rem;
+ transform: translateY(100%);
+ transition: .5s ease;
+ font-family: 'Roboto', sans-serif;
+}
+
+.pfbox:hover .layer{
+    transform: translateY(0);
+}
+.pfbox .layer h4{
+    font-size: 2rem;
+    color: #f1f5f4;
+    
+}
+
+.pfbox .layer p{
+    font-size: 1rem;
+    margin: .3rem 0 1rem;
+    color: #dad8d8;
+}
+.pfbox .layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: #f5f1f1;
+    border-radius: 50%;
+    text-decoration: none;
+    
+}
+.pfbox .layer a i{
+    font-size: 2rem;
+    color:#0a0a0a;
 }
 #artwork:checked ~ .content_3{
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5rem;
 }
  /* .p-btns {
     
@@ -401,20 +482,14 @@ input[type="radio"]{
     border:none;
     /* /* border: 2px solid #bebebe;  */
     /* color: #000000;
-} 
-.portfolio-content{
+} */
+/* .content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     text-align: center;
     gap: 2rem;
     margin-top: 5rem;
-}
-.portfolio-content img{
-    width: 400px;
-    height: auto;
-    border-radius: 7px;
-    position: relative;
-    overflow: hidden;
-}
- */ 
+} */
+
+ 
