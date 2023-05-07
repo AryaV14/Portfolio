@@ -9,7 +9,7 @@
      */
 }
 body{
-    background: #0a0a0a;
+    background: #131313;
 }
 
 .hero{
@@ -189,7 +189,7 @@ text-fill-color: transparent; */
  .services{
     height: 100vh;
     width: 100%;
-    background-color: #0f0f0f;
+    background-color: #1d1d1d;
     position: relative;
  }
 
@@ -232,7 +232,7 @@ text-fill-color: transparent; */
 
  .box{
      padding:45px;
-     background: #1b1b1b;
+     background: #131313;
      border-top:5px solid transparent;
      border-radius: 0.5rem;
      transition: all 0.40s ease;
@@ -273,9 +273,9 @@ text-fill-color: transparent; */
 
 
  .portfolio{
-    height: 100vh;
+    height: 200vh;
     width: 100%;
-    background-image: url(images/Portfolio_bg.jpg);
+    /* background-image: url(/images/Portfolio_bg.jpg); */
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -288,7 +288,7 @@ text-fill-color: transparent; */
     max-width: 480px;
     width:100%;
     background: transparent;
-    border: 2px solid #1c7745;
+    border: 2px solid #575656;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -313,8 +313,8 @@ text-fill-color: transparent; */
     position: absolute;
     height: 100%;
     width: 33.33%;
-    background: #1c7745;
-    border-radius: 5px;
+    background: #575656;
+    border-radius: 3px;
     z-index: 0;
     left: 33.33%;
     bottom: 0;
@@ -350,11 +350,11 @@ input[type="radio"]{
 
 #design:checked ~ .content_1{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 2rem;
+    gap: 10rem;
     margin-top: 5rem;
 }
 #project:checked ~ .content_2 {
@@ -363,13 +363,23 @@ input[type="radio"]{
     align-items: center;
     justify-content: center;
     text-align: center;
+    gap: 10rem;
+    margin-top: 5rem;
+}
+
+#artwork:checked ~ .content_3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     gap: 5rem;
     margin-top: 5rem;
 }
- .pfbox{
+.pfbox{
     width: 100%;
     /* height: auto; */
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     box-shadow: 0 0 5rem #000000;
     position: relative;
     overflow: hidden;
@@ -382,6 +392,60 @@ transition: .5s ease;
 .pfbox:hover img{
    transform: scale(1.1);
 }
+
+.pfbox1{
+    width: 100%;
+    /* height: auto; */
+    
+    position: relative;
+    overflow: hidden;
+    display:flex;
+}
+.pfbox1 img{
+width: 100%;
+transition: .5s ease;
+vertical-align: middle;
+border: 0.5rem solid #131313;
+}
+.pfbox1:hover img{
+   transform: scale(1.1);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0px 5px;
+  }
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    
+    .column {
+      flex: 50%;
+      max-width: 50%;
+      
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .portfolio{
+        height: 320vh;
+    }
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  
+
 .pfbox .layer{
  position: absolute;
  bottom: 0;
@@ -422,22 +486,57 @@ transition: .5s ease;
     height: 4rem;
     background: #f5f1f1;
     border-radius: 50%;
-    text-decoration: none;
+
     
 }
 .pfbox .layer a i{
     font-size: 2rem;
     color:#0a0a0a;
 }
-#artwork:checked ~ .content_3{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 2rem;
-    margin-top: 5rem;
+
+.content a{
+    text-decoration: none;
 }
+.pfbtn1{
+    width: 170px;
+    height: 50px;
+    margin-top: 40px;
+    background-color: #15b85e;
+    padding: 12px 10px;
+    border: none;
+    color:Black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    cursor: pointer;
+    display:block;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.4s;
+   
+}
+
+.pfbtn1 img{
+     width: 35px;
+     height: 30px;
+     display: none;
+ }
+
+.pfbtn1:hover img{
+    display: block;
+ }
+
+.pfbtn1:hover{
+     width:180px;
+     height: 50px;
+     padding: 12px 10px;
+     display:flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+
  /* .p-btns {
     
     justify-content: center;
@@ -493,3 +592,8 @@ transition: .5s ease;
 } */
 
  
+.about{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+ }
