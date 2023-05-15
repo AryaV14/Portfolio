@@ -451,11 +451,12 @@ input[type="radio"]{
     position: relative;
     overflow: hidden;
     display: flex;
+    box-shadow:2px 6px 8px 0px rgba(22, 22, 26, 0.18);
 }
 .pfbox img{
 width: 100%;
 transition: .5s ease;
-border: 2px solid var(--title);
+/* border: 2px solid var(--title); */
 }
 .pfbox:hover img{
    transform: scale(1.1);
