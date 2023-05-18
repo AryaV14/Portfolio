@@ -786,6 +786,7 @@ input[type="radio"]{
 .text-box:hover{
     box-shadow:10px 10px 10px 0px rgba(21, 21, 22, 0.18);
     border-bottom: 10px solid var(--title);
+    transition: .2s;
 }
 
 .container::after{
