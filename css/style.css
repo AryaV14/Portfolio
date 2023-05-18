@@ -172,7 +172,7 @@ text-fill-color: transparent; */
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 300;
-    cursor: po;
+    cursor: pointer;
     background: transparent;
     border: 2px solid var(--highlights);
     border-radius: 8px;
@@ -272,7 +272,7 @@ text-fill-color: transparent; */
     font-style: normal;
     font-weight: 100;
     font-size: 6rem;
-    color: var(--bg);
+    color: var(--title);
  }
 
  .title h4{
@@ -318,7 +318,7 @@ text-fill-color: transparent; */
  }
 
  .box p{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
      color: var(--grey);
      font-size: 14px;
      line-height: 25px;
@@ -368,7 +368,7 @@ text-fill-color: transparent; */
       text-align: center;
       cursor: pointer;
       font-size: 20px;
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Poppins', sans-serif;
       color: var(--title) ;
       z-index: 1;
       position: relative;
@@ -454,12 +454,12 @@ input[type="radio"]{
     box-shadow:2px 6px 8px 0px rgba(22, 22, 26, 0.18);
 }
 .pfbox img{
-width: 100%;
-transition: .5s ease;
-/* border: 2px solid var(--title); */
+    width: 100%;
+    transition: .5s ease;
+    /* border: 2px solid var(--title); */
 }
 .pfbox:hover img{
-   transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .pfbox1{
@@ -471,66 +471,66 @@ transition: .5s ease;
     display:flex;
 }
 .pfbox1 img{
-width: 100%;
-transition: .5s ease;
-vertical-align: middle;
-/* border: 0.5rem solid #131313; */
+    width: 100%;
+    transition: .5s ease;
+    vertical-align: middle;
+    /* border: 0.5rem solid #131313; */
 }
 .pfbox1:hover img{
-   transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-   
-  }
-  
-  /* Create two equal columns that sits next to each other */
-  .column {
+    
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
     flex: 33.33%;
     max-width: 33.33%;
     padding: 0px 5px;
-  }
-  /* Responsive layout - makes a two column-layout instead of four columns */
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
     
     .column {
-      flex: 50%;
-      max-width: 50%;
-      
+        flex: 50%;
+        max-width: 50%;
+        
     }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
     .portfolio{
         height: 320vh;
     }
     .column {
-      flex: 100%;
-      max-width: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
-  }
-  
-  
+}
+
+
 
 .pfbox .layer{
- position: absolute;
- bottom: 0;
- left: 0;
- width: 100%;
- height: 100%;
- background: linear-gradient(rgba(0,0,0,.7), var(--highlights));
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- text-align: center;
- padding: 0 2rem;
- transform: translateY(100%);
- transition: .5s ease;
- font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.7), var(--highlights));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+    font-family: 'Poppins', sans-serif;
 }
 
 .pfbox:hover .layer{
@@ -557,7 +557,7 @@ vertical-align: middle;
     height: 4rem;
     background: var(--bg);
     border-radius: 50%;
-
+    
     
 }
 .pfbox .layer a i{
@@ -571,45 +571,46 @@ vertical-align: middle;
 .pfbtn1{
     width: 170px;
     height: 50px;
-    margin-top: 40px;
+    margin-top: 10px;
+    margin-bottom: 80px;
     /* margin-left: 480px; */
     background-color: var(--highlights);
     padding: 12px 10px;
     border: none;
     color:Black;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    letter-spacing: 1px;
+    font-weight: 300;
     border-radius: 8px;
     cursor: pointer;
     display:block;
     align-items: center;
     justify-content: space-between;
     transition: 0.4s;
-   
+    
 }
 
 .pfbtn1 img{
-     width: 35px;
-     height: 30px;
-     display: none;
- }
+    width: 35px;
+    height: 30px;
+    display: none;
+}
 
 .pfbtn1:hover img{
     display: block;
- }
+}
 
 .pfbtn1:hover{
-     width:180px;
-     height: 50px;
-     padding: 12px 10px;
-     display:flex;
-     align-items: center;
-     justify-content: space-between;
- }
+    width:180px;
+    height: 50px;
+    padding: 12px 10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
- /* .p-btns {
+/* .p-btns {
     
     justify-content: center;
     gap: 0.5rem;
@@ -629,7 +630,7 @@ vertical-align: middle;
     padding-top: 8px;
     top:50%;
     transform: translateY(-50%); 
-
+    
 }
 .p-btn a{
     position: relative;
@@ -663,12 +664,210 @@ vertical-align: middle;
     margin-top: 5rem;
 } */
 
- 
+
 .about{
-    height: 100vh;
-    width: 100%;
+    height: 1200px;
+    width: 90%;
+    background: var(--highlights);
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    margin: -2% auto 20px auto;
+}
+
+
+.abt{
+    display: flex;
     position: relative;
- }
- .about h2{
-     color: var(--title);
- }
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10% 10% 10% 10%;
+}
+
+.abt img{
+    height:300px;
+}
+
+.abt h2{
+    font-family: 'Italiana', serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 6rem;
+    color: var(--title);
+}
+
+.about_text{
+    padding-left:10%;
+    height: 300px;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    
+}
+
+
+.about_text button{
+    width: 170px;
+    height: 50px;
+    margin-top: 3%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid var(--grey3);
+    border-radius: 3px;
+    color: var(--title);
+    transition: none;
+}
+
+.about_text button:hover{
+    background-color: var(--grey3);
+    color:var(--highlights);
+}
+
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.timeline h2{
+    font-family: 'Poppins', san-serif;
+    font-weight: 600;
+    font-size: 32px;
+    padding-bottom: 3%;
+    color: var(--title);
+    
+}
+
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 100%;
+    /* background-color: var(--title); */
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown  {
+    0%{
+        opacity: .3;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+        
+    }
+}
+
+.container:nth-last-child(1){
+    animation-delay: 2s;
+}
+.container:nth-last-child(2){
+    animation-delay: 1s;
+}
+.container:nth-last-child(3){
+    animation-delay:0s;
+}
+
+
+
+
+
+.text-box{
+    padding: 20px 30px;
+    background: var(--bg);
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.text-box:hover{
+    box-shadow:10px 10px 10px 0px rgba(21, 21, 22, 0.18);
+    border-bottom: 10px solid var(--title);
+}
+
+.container::after{
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px; 
+    border-radius: 50%;
+    right:calc(100% - 9px);
+    top: 30%;
+    background-color: var(--bg);
+    border: 2px solid var(--highlights);
+   
+}
+
+.timeline::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background:var(--bg);
+    top: 12%;
+    left: 0%;
+    margin-left: -3px;
+    animation: moveline 6s forwards;
+}
+
+@keyframes moveline  {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 88%;
+    }
+}
+.text-box h3{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.text-box small{
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.text-box p{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top:28px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid var(--title);
+    left: -15px;
+    
+}
+
+@media screen and (max-width:600px)  {
+    .timeline{
+        margin: 50px auto;
+    }
+    .timeline::after{
+        left:31px;
+    }
+    .container{
+        width:100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .text-box{
+        font-size: 13px;
+    }
+    
+    .text-box small{
+        margin-bottom:10px;
+    }
+    
+    
+}
+
