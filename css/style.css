@@ -573,7 +573,7 @@ input[type="radio"]{
     height: 50px;
     margin-top: 10px;
     margin-bottom: 80px;
-    /* margin-left: 480px; */
+    margin-left: 480px;
     background-color: var(--highlights);
     padding: 12px 10px;
     border: none;
