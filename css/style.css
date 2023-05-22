@@ -463,11 +463,11 @@ input[type="radio"]{
      flex:1;
      height: 350px;
      margin-left: -150px;
-     /* background-color: white; */
-     background: linear-gradient(var(--bg),var(--highlights));
+     background-color: var(--highlights);
+     /* background: linear-gradient(var(--highlights),var(--highlights)); */
      padding:5rem 2rem;
      border-radius: 12px;
-     /* box-shadow:2px 6px 8px 0px rgba(22, 22, 26, 0.18); */
+     box-shadow:2px 6px 8px 0px rgba(22, 22, 26, 0.18);
      z-index: -1;
  }
  .pfbox .pfimg{
@@ -501,17 +501,17 @@ input[type="radio"]{
 
 
 .pfbox .layer h4{
-    font-family: 'Italiana', serif;
-    font-weight: 100;
-    font-size: 2rem;
-    color: var(--grey2);
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--title);
     
 }
 
 
 .pfbox .layer p{
     font-family: 'Poppins', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: .3rem 0 1rem;
     color: var(--title);
 }
@@ -536,8 +536,28 @@ input[type="radio"]{
 } 
 
 
-
-
+@media only screen and (max-width:768px){
+    .pfbox{
+        flex-direction: column;
+    }
+    .pfbox .pfimg{
+        width: 100%;
+        z-index: -1;
+    }
+    .pfbox .layer{
+        width: 90%;
+        margin-left: 0;
+        margin-top: -150px;
+       
+    }
+    .pfbox:nth-child(even){
+        flex-direction: column;
+    }
+    .pfbox:nth-child(even) .pfimg{
+        margin-left: 0;
+        
+    }
+}
 
 
 
