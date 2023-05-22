@@ -343,6 +343,7 @@ text-fill-color: transparent; */
     background-position: top center;
     position: relative;
     background-attachment: fixed; 
+
  }
  
  .portfolio h2{
@@ -415,23 +416,25 @@ input[type="radio"]{
 }
 
 #design:checked ~ .content_1{
-    display: grid;
-    /* grid-template-columns: repeat(3,1fr); */
+    display: contents;
+    padding: 10rem 0;
+    /* grid-template-columns: repeat(3,1fr);
     grid-template-columns: repeat(autofit, minmax(300px,auto));
     align-items: center;
     justify-content: center;
     text-align: center;
     gap: 10rem;
-    margin-top: 5rem;
+    margin-top: 5rem; */
 }
 #project:checked ~ .content_2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 4rem;
-    margin-top: 5rem;
+    display:contents;
+    padding: 10rem 0;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px,auto)); */
+    /* align-items: center;
+    justify-content: center; */
+    /* text-align: center; */
+    /* gap: 4rem; */
+  
 }
 
 #artwork:checked ~ .content_3{
@@ -443,79 +446,144 @@ input[type="radio"]{
     gap: 5rem;
     margin-top: 5rem;
 }
+
 .pfbox{
-    width: 100%;
-    /* height: auto; */
-    border-radius: 0.1rem;
-    /* box-shadow: 2rem 2rem 1rem var(--title); */
-    position: relative;
-    overflow: hidden;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+}
+ .pfbox:nth-child(even) {
+     flex-direction: row-reverse;
+ }
+
+ .pfbox .layer{
+     flex:1;
+     height: 350px;
+     margin-left: -150px;
+     /* background-color: white; */
+     background: linear-gradient(var(--bg),var(--highlights));
+     padding:5rem 2rem;
+     border-radius: 12px;
+     /* box-shadow:2px 6px 8px 0px rgba(22, 22, 26, 0.18); */
+     z-index: -1;
+ }
+ .pfbox .pfimg{
+     flex:1;
+
+ }
+
+ .pfbox:nth-child(even) .layer{
+     margin-left: 0;
+     flex: 2;
+     
+
+ }
+ .pfbox:nth-child(even) .pfimg{
+     margin-left: -150px;
+     
+ }
+
+ .pfimg img{
+     height: 400px;
+     overflow: hidden;
+     border-radius: 12px;
+     box-shadow:2px 6px 8px 0px rgba(22, 22, 26, 0.18);
+     transition: .5s ease;
+ }
+
+
+.pfimg:hover img{
+    transform: scale(1.1);
+}
+
+
+.pfbox .layer h4{
+    font-family: 'Italiana', serif;
+    font-weight: 100;
+    font-size: 2rem;
+    color: var(--grey2);
+    
+}
+
+
+.pfbox .layer p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    margin: .3rem 0 1rem;
+    color: var(--title);
+}
+.pfbox .layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: var(--bg);
+    border-radius: 50%;
+    
+    
+}
+.pfbox .layer a i{
+    font-size: 2rem;
+    color:var(--grey3);
+}
+
+.content a{
+    text-decoration: none;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .pfbox{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 90%;
+    height: auto;
+    border-radius: 0.1rem;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    /* box-shadow: 2rem 2rem 1rem var(--title); */
+    /* overflow: hidden; */
+    /* display: flex;
     box-shadow:2px 6px 8px 0px rgba(22, 22, 26, 0.18);
 }
 .pfbox img{
-    width: 100%;
+    width: 350px;
     transition: .5s ease;
     /* border: 2px solid var(--title); */
-}
+/* }
 .pfbox:hover img{
     transform: scale(1.1);
 }
 
-.pfbox1{
-    width: 100%;
-    /* height: auto; */
+
+.layer{ 
     
-    position: relative;
-    overflow: hidden;
-    display:flex;
-}
-.pfbox1 img{
-    width: 100%;
-    transition: .5s ease;
-    vertical-align: middle;
-    /* border: 0.5rem solid #131313; */
-}
-.pfbox1:hover img{
-    transform: scale(1.1);
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-
-/* Create two equal columns that sits next to each other */
-.column {
-    flex: 33.33%;
-    max-width: 33.33%;
-    padding: 0px 5px;
-}
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    
-    .column {
-        flex: 50%;
-        max-width: 50%;
-        
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .portfolio{
-        height: 320vh;
-    }
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
-}
+}  */
 
 
 
-.pfbox .layer{
+
+/* .pfbox .layer{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -567,6 +635,56 @@ input[type="radio"]{
 
 .content a{
     text-decoration: none;
+} */
+.pfbox1{
+    width: 100%;
+    /* height: auto; */
+    
+    position: relative;
+    overflow: hidden;
+    display:flex;
+}
+.pfbox1 img{
+    width: 100%;
+    transition: .5s ease;
+    vertical-align: middle;
+    /* border: 0.5rem solid #131313; */
+}
+.pfbox1:hover img{
+    transform: scale(1.1);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0px 5px;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    
+    .column {
+        flex: 50%;
+        max-width: 50%;
+        
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .portfolio{
+        height: 320vh;
+    }
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 .pfbtn1{
     width: 170px;
