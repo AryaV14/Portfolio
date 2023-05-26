@@ -256,8 +256,8 @@ text-fill-color: transparent; */
 
  .organize{
     
-     padding-left:10%;
-     padding-right: 10%;
+     padding-left:12%;
+     padding-right: 12%;
      padding-top:5%;
     
  }
@@ -272,7 +272,7 @@ text-fill-color: transparent; */
     font-style: normal;
     font-weight: 100;
     font-size: 6rem;
-    color: var(--title);
+    color: var(--highlights);
  }
 
  .title h4{
@@ -288,7 +288,7 @@ text-fill-color: transparent; */
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     align-items: center;
     text-align: center;
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 4rem;
 }
 
@@ -338,6 +338,7 @@ text-fill-color: transparent; */
  .portfolio{
      width: 100%;
      height: auto;
+     padding-top: 5%;
     /* background-image: url(/images/Portfolio_bg.jpg); */
     background-size: cover;
     background-position: top center;
@@ -351,16 +352,15 @@ text-fill-color: transparent; */
  }
 #nav2{
     position: relative;
-    max-width: 540px;
     width:100%;
     background: transparent;
-    border: 2px solid var(--highlights);
+    border-top: 2px solid var(--grey2);
+    border-bottom: 2px solid var(--grey2);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 10px 10px 10px;
-    border-radius: 5px;
-    margin: 50px auto;
+    padding: 8px 10px 8px 10px;
+    margin: 50px auto 100px auto;
  }
 #nav2 label{
       display:block;
@@ -369,6 +369,7 @@ text-fill-color: transparent; */
       text-align: center;
       cursor: pointer;
       font-size: 20px;
+      font-weight: 100;
       font-family: 'Poppins', sans-serif;
       color: var(--title) ;
       z-index: 1;
@@ -379,7 +380,7 @@ text-fill-color: transparent; */
     position: absolute;
     height: 100%;
     width: 33.33%;
-    background: var(--highlights);
+    background: var(--grey2);
     border-radius: 1px;
     z-index: 0;
     left: 33.33%;
@@ -404,8 +405,8 @@ text-fill-color: transparent; */
 #design:checked ~ #nav2 label.design,
 #project:checked ~ #nav2 label.project,
 #artwork:checked ~ #nav2 label.artwork{
-    color: var(--title);
-    font-weight: 500;
+    color: var(--bg);
+    /* font-weight: 500; */
 }
 input[type="radio"]{
     display: none;
@@ -451,9 +452,9 @@ input[type="radio"]{
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
  .pfbox:nth-child(even) {
      flex-direction: row-reverse;
@@ -461,13 +462,12 @@ input[type="radio"]{
 
  .pfbox .layer{
      flex:1;
-     height: 350px;
-     margin-left: -150px;
-     background-color: var(--highlights);
+     height: 400px;
+     margin-left: -350px;
+     background-color: white;
      /* background: linear-gradient(var(--highlights),var(--highlights)); */
-     padding:5rem 2rem;
-     border-radius: 12px;
-     box-shadow:2px 6px 8px 0px rgba(22, 22, 26, 0.18);
+     padding:5rem 5rem;
+     /* box-shadow:2px 6px 8px 0px rgba(22, 22, 26, 0.06); */
      z-index: -1;
  }
  .pfbox .pfimg{
@@ -482,21 +482,21 @@ input[type="radio"]{
 
  }
  .pfbox:nth-child(even) .pfimg{
-     margin-left: -150px;
+     margin-left: -100px;
      
  }
 
  .pfimg img{
      height: 400px;
      overflow: hidden;
-     border-radius: 12px;
-     box-shadow:2px 6px 8px 0px rgba(22, 22, 26, 0.18);
+     border-radius: 5px;
+     /* box-shadow:2px 6px 8px 0px rgba(22, 22, 26, 0.18); */
      transition: .5s ease;
  }
 
 
 .pfimg:hover img{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 
@@ -521,8 +521,8 @@ input[type="radio"]{
     align-items: center;
     width: 4rem;
     height: 4rem;
-    background: var(--bg);
     border-radius: 50%;
+    background: var(--bg);
     
     
 }
