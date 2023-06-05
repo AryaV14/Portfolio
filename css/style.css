@@ -361,12 +361,13 @@ text-fill-color: transparent; */
     width:540px;
     background: transparent;
     border: 2px solid var(--grey2);
+    border-radius: 5px;
     /* border-bottom: 2px solid var(--grey2); */
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 8px 10px 8px 10px;
-    margin: 5rem auto 5rem auto;
+    margin: 5rem auto 3rem auto;
  }
 #nav2 label{
       display:block;
@@ -387,7 +388,7 @@ text-fill-color: transparent; */
     height: 100%;
     width: 33.33%;
     background: var(--grey2);
-    border-radius: 1px;
+    border-radius: 3px;
     z-index: 0;
     left: 33.33%;
     bottom: 0;
@@ -552,7 +553,7 @@ input[type="radio"]{
 
 .pfbox .layer h4{
     font-family: 'Italiana',sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 3.5rem;
     color: var(--title);
     
@@ -563,7 +564,7 @@ input[type="radio"]{
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     margin: 1.5rem 0 8rem;
-    color: var(--highlights);
+    color: var(--grey);
 }
 
 .content a{
@@ -1212,12 +1213,12 @@ input[type="radio"]{
     cursor: pointer;
     display:block;
     justify-content: space-between;
-
+    
     
 }
 
 .certi_btn:hover{
-   font-weight: 400;
+    font-weight: 400;
     background: var(--title);
     color: var(--highlights);
 }
