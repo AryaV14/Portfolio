@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Arya Vijayan</title>
 
     <!-- Custom css -->
@@ -510,8 +511,8 @@
 <section class="contact" id="contact">
     <div class="contact-text">
         <h2>Contact <span>Me</span></h2>
-        <h4>LET'S WORK TOGETHER</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores sapiente, nobis libero itaque minus perferendis voluptates iste! Fuga ratione dolore quod mollitia illo, officiis error incidunt eveniet! Nisi, in veniam.</p>        
+        <h4>READY TO WORK TOGETHER?</h4>
+        <p>I'm excited to hear from you! Whether you have a project in mind, want to discuss collaboration opportunities, or simply have a question, feel free to reach out. I'm just a message away. Drop me a line using the form, and I'll get back to you as soon as possible. Let's bring your ideas to life!</p>        
         <div class="contact-list">
             <li> <i class='bx bx-envelope'> </i>  aryavijayanrohini@gmail.com</li>
         </div>
@@ -523,16 +524,38 @@
         </div>
     </div>
     <div class="contact-form">
-        <form action="">
-            <input type="" placeholder="Enter Your Name" required>
-            <input type="" placeholder="Enter Your Email" required>
-            <input type="" placeholder="Enter Your Subject">
-            <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
-        <input type="submit" value="submit" class="send">
+        <form id="submit-form" action="">
+            <input type="" name="name" placeholder="Enter Your Name" required>
+            <input type="" name="email" placeholder="Enter Your Email" required>
+            <input type="" name="subject" placeholder="Enter Your Subject">
+            <textarea name="message" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+        <input type="submit" value="Submit" class="send">
         </form>
     </div>
 </section>
+<section class="end">
+    <p>Designed and developed by AV<i class='bx bx-copyright'></i>2023<br>
+    Made with Love. All rights reserved.</p>
+</section>
+<script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbzIhNTvPctu2-F-cEiCA8v8mfF7BNl16wgn7V6lvL46hIh383kPvqH2124kKQMKuAz7tQ/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                // alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
 
+            }
+        })
+    })
+</script>
 </body>
 
 
