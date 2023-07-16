@@ -37,7 +37,7 @@ body{
 }
 
 .logo{
-    width: 90px;
+    width: 70px;
     height: auto;
     cursor: pointer;
     opacity: 100%;
@@ -48,11 +48,12 @@ body{
     align-items: center;
     width:100%;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-left: 5%;
     padding-right: 5%;
-    position: absolute;
+    position: fixed;
     background: transparent;
+    backdrop-filter: saturate(180%) blur(4px);
     z-index: 5;
 } 
 
@@ -71,7 +72,7 @@ body{
     text-decoration: none;
     color: var(--grey);
     font-weight: 500;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 
@@ -146,14 +147,16 @@ text-fill-color: transparent; */
     color: var(--bg);
 }
 
-
+.main-text a{
+    text-decoration: none;
+}
 /* button group */
 .main-text .button{
     padding-left: 13%;
     display: flex;
     gap: 0.5rem;
     /* padding-top:100px; */
-
+   
 }
 
 
