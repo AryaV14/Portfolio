@@ -1301,3 +1301,105 @@ input[type="radio"]{
     background: var(--title);
     color: var(--highlights);
 }
+
+
+.contact{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 90px;
+    margin-top: 130px;
+    background-color: var(--grey2);
+}
+
+.contact-text h2{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 5rem;
+    /* text-align: center; */
+    color: var(--highlights);
+}
+.contact-text h2 span{
+    color: var(--highlights);
+}
+
+.contact-text h4{
+    margin: 15px 0;
+    color: var(--title);
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.contact-text p{
+    color: var(--grey1);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 28px;
+    margin-bottom: 2rem;
+}
+
+.contact-list{
+    margin-bottom: 3rem;
+    
+
+}
+
+.contact-list li{
+    margin-bottom: 7px;
+    display: block;
+    font-size: 20px;
+    color: var(--highlights);
+    font-weight: 100;
+}
+
+
+.contact-list i{
+    display: inline-block;
+    margin-bottom: 10px;
+    /* display: block; */
+    font-size: 30px;
+    /* color: var(--highlights);
+    font-weight: 100; */
+    transition: all .40s ease;
+}
+
+.contact-list li a:hover{
+    transform: scale(1.01)translateY(-5px);
+
+}
+
+.contact-icon i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid var(--highlights);
+    border-radius: 50%;
+    font-size: 20px;
+    color:var(--highlights);
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    /* opacity: 0; */
+    animation: slidelieft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+
+}
+.contact-icon i:hover{
+    background: var(--highlights);
+    color: #000;
+    box-shadow: 0 0 20px var(--highlights);
+}
+
+.contact-form form{
+    position: relative;
+}
+
+
