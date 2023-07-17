@@ -37,7 +37,7 @@ body{
 }
 
 .logo{
-    width: 70px;
+    width: 80px;
     height: auto;
     cursor: pointer;
     opacity: 100%;
@@ -48,12 +48,12 @@ body{
     align-items: center;
     width:100%;
     justify-content: space-between;
-    padding-top: 5px;
+    padding-top: 1px;
     padding-left: 5%;
     padding-right: 5%;
-    position: fixed;
+    position: absolute;
     background: transparent;
-    backdrop-filter: saturate(180%) blur(4px);
+    /* backdrop-filter: saturate(100%) blur(4px); */
     z-index: 5;
 } 
 
@@ -226,6 +226,23 @@ text-fill-color: transparent; */
     background-color: var(--highlights);
     color:Black;
 }
+
+.gotop{
+    position: fixed;
+    width: 50px;
+    height: 60px;
+    background: var(--grey2);
+    bottom: 40px;
+    right: 50px;
+    border-radius: 20px;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    color: var(--grey1);
+    font-size: 32px;
+    
+}
  .scroll{
     height: 5vh;
     width: 100%;
@@ -315,7 +332,7 @@ text-fill-color: transparent; */
 } */
 
  .services{
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background-color: var(--grey3);
     position: relative;
@@ -416,11 +433,11 @@ text-fill-color: transparent; */
      padding-top: 5%;
     /* background-image: url(/images/Portfolio_bg.jpg); */
     /* background: white; */
-    background-size: cover;
-    background-position: top center;
+    /* background-size: cover;
+    background-position: top center; */
     position: relative;
-    background-attachment: fixed; 
-
+    /* background-attachment: fixed;  */
+   
  }
  
  .portfolio h2{
@@ -548,7 +565,7 @@ input[type="radio"]{
      /* background: linear-gradient(var(--highlights),var(--bg)); */
      padding:4rem 4rem;
      /* box-shadow:2px 6px 8px 0px rgba(22, 22, 26, 0.06); */
-     z-index: -1;
+     /* z-index: -1; */
  }
  
  .pfbox:nth-child(even) .layer{
@@ -912,25 +929,35 @@ input[type="radio"]{
 
 .about{
     position: relative;
-    height: 850px;
+    /* height: auto; */
+    height: 950px;
     width: 100%;
     /* background: var(--highlights);
     border-radius: 3px;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2); */
     margin: 10% auto auto;
+   background-image: linear-gradient(to top left, var(--highlights) ,var(--bg) ,transparent);
+
 }
-
-
 .abt{
     display: flex;
     position: relative;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10% 10% 10% 15%;
+    padding: 10% 10% 10% 20%;
+}
+.abt .images{
+    display: block;
+    
 }
 
 .abt img{
-    height:300px;
+    position: relative;
+    width:300px;
+    border-radius: 20px;
+    /* border: 8px solid var(--grey3);
+    border-bottom: 50px solid var(--grey3);  */
+    
 }
 
 .abt h2{
@@ -1062,6 +1089,7 @@ input[type="radio"]{
     background: var(--bg);
     padding-left: 10%;
     padding-right: 10%;
+    /* background-image: linear-gradient(150deg,var(--highlights), var(--bg),var(--bg)); */
 }
 
 .timeline{
@@ -1223,7 +1251,7 @@ input[type="radio"]{
     margin-bottom: 4%;
    position: relative;
    text-align: center;
-   
+  
 }
 .achievements h2{
     font-family: 'Poppins', sans-serif;
@@ -1442,13 +1470,14 @@ input[type="radio"]{
     text-decoration: none;
     font-weight: 600;
     /* opacity: 0; */
+    /* transition: .5s ease; */
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 5px var(--highlights), 0 0 5px var(--highlights);
+    /* box-shadow: 0 0 5px var(--highlights), 0 0 5px var(--highlights); */
 
 }
 .contact-form form .send:hover{
-    color:var(--grey1);
+    color:var(--grey3);
     background: var(--highlights);
     box-shadow: 0 0 5px var(--highlights),
     0 0 5px var(--highlights), 0 0 5px var(--highlights),
