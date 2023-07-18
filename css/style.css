@@ -1040,7 +1040,7 @@ input[type="radio"]{
     position: relative;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10% 10% 10% 20%;
+    padding: 10% 8% 10% 10%;
 }
 .abt .images{
     display: flex;
@@ -1050,7 +1050,7 @@ input[type="radio"]{
 .abt img{
     position: relative;
     width:300px;
-    border-radius: 8px;
+    border-radius: 5px;
     /* border: 8px solid var(--grey3);
     border-bottom: 50px solid var(--grey3);  */
     
