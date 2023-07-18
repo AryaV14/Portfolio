@@ -1568,11 +1568,34 @@ input[type="radio"]{
     font-size: 16px;
     opacity: 40%;
 }
-@media screen and (max-width: 420px){
-   
-    .main-text .button {
-        align-items: center;
+
+@media screen and (max-width: 420px) {
+    .main-text{
+        bottom: 20%;
+        display: flex;
         flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+      
+    }
+    .main-text h1{
+        padding-left: 0;
+    }
+    .main-text h1 h{
+        padding-left: 0;
+    }
+    .main-text h3{
+        font-size: 2rem;
+        padding-left: 0;
+    }
+
+    
+    .main-text .button {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 0;
     }
     .main-text .button .btn2 {
@@ -1607,6 +1630,17 @@ input[type="radio"]{
     
 }
 
+@media screen and (min-width: 421px) and (max-width: 1200px) {
+    .main-text h1{
+        font-size: 1.5rem;
+    }
+    .main-text h1 h{
+        font-size: 3.4rem;
+    }
+    .main-text h3{
+        font-size: 4.5rem;
+    } 
+}
 
 @media screen and (max-width: 1200px) {
     #nav1 {
@@ -1617,18 +1651,7 @@ input[type="radio"]{
         display: flex;
        
     }
-    /* .main-text h1{
-        font-size: 1.5rem;
-    }
-    .main-text h1 h{
-        font-size: 3.4rem;
-    }
-    .main-text h3{
-        font-size: 4.5rem;
-    }
-     */
 } 
-
 
 
    
