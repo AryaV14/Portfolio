@@ -43,7 +43,7 @@
 <!--     navbar -->
     
     <nav id="nav1">
-        <img src ="images/logo.png" class="logo" >
+        <img src ="images/logo.png" class="logo">
         <ul class="navlist1">
             <li><a href="#home">HOME</a></li>
             <li><a href="#services">SERVICES</a></li>
@@ -53,6 +53,23 @@
         </ul>
     </nav>
     
+    <nav id="hamburger-nav">
+        <img src ="images/logo.png" class="logo">
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="toggleMenu()">HOME</a></li>
+                <li><a href="#services" onclick="toggleMenu()">SERVICES</a></li>
+                <li><a href="#portfolio" onclick="toggleMenu()">PORTOLIO</a></li>
+                <li><a href="#about" onclick="toggleMenu()">ABOUT ME</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">CONTACT</a></li>
+            </div>
+        </div>
+    </nav>
     
     
     <!-- hero section  -->
