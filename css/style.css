@@ -1635,23 +1635,26 @@ input[type="radio"]{
     }
 
     #nav2 label{
-        font-size: 10px;
+        font-size: 12px;
     }
    
 
     .pfbox 
     {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
+    
 
     .pfbox:nth-child(even){
         flex-direction: column;
     }
     .pfbox .pfimg{
         margin-left: 0;
-        z-index: -1;
 
     }
+    
 
     .pfbox .pfimg img{
         width: 300px;
@@ -1659,12 +1662,12 @@ input[type="radio"]{
     }
     .pfbox:nth-child(even) .pfimg{
         margin-left: 0;
-        z-index: -1;
         
     }
+   
     .pfbox:nth-child(even) .pfimg img{
-        width: 320px;
-        height: 320px;
+        width: 300px;
+        height: 300px;
     }
 
     .pfbox .layer{
@@ -1672,13 +1675,27 @@ input[type="radio"]{
         height: auto;
         margin-left: 0;
         margin-top: -80px;
+        padding: 2rem;
+        z-index: 0;
     }
+    
 
     .pfbox:nth-child(even) .layer{
         width: 90%;
         height: auto;
         margin-left: 0;
         margin-top: -80px;
+        z-index: 0;
+        
+    }
+
+    .pfbox .layer h4{
+        font-size:2.5rem;
+    }
+    
+    .pfbox .layer p{
+        font-size:0.8rem;
+
     }
 }
 
@@ -1753,25 +1770,27 @@ input[type="radio"]{
     .pfbox .pfimg{
         /* width: 60%; */
         margin-left: 0;
-        z-index: -1;
+   
     }
+
 
     .pfbox .layer{
         width: 90%;
         margin-left: 0;
         margin-top: -150px;
-       
+        z-index: 0;
     }
 
     .pfbox:nth-child(even) .pfimg{
         margin-left: 0;
-        z-index: -1;
         
     }
+   
     .pfbox:nth-child(even) .layer{
         width: 90%;
         margin-left: 0;
         margin-top: -150px;
+        z-index: 0;
     }
 }
 
