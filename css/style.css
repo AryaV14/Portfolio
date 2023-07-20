@@ -540,7 +540,9 @@ text-fill-color: transparent; */
  }
 #nav2{
     position: relative;
-    width:540px;
+    /* width:540px; */
+    width:40%;
+    /* width: 33.75rem; */
     background: transparent;
     border: 2px solid var(--grey2);
     border-radius: 0.3rem;
@@ -643,7 +645,7 @@ input[type="radio"]{
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
 
 
@@ -746,7 +748,7 @@ input[type="radio"]{
 .pfbox .layer p{
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
-    margin: 1.5rem 0 8rem;
+    margin: 1.5rem 0 2rem;
     color: var(--grey);
 }
 
@@ -755,29 +757,7 @@ input[type="radio"]{
 } 
 
 
-@media only screen and (max-width:768px){
-    .pfbox{
-        flex-direction: column;
-    }
-    .pfbox .pfimg{
-        width: 0%;
-        margin-left: 0;
-        z-index: -1;
-    }
-    .pfbox .layer{
-        width: 90%;
-        margin-left: 0;
-        margin-top: -150px;
-       
-    }
-    .pfbox:nth-child(even){
-        flex-direction: column;
-    }
-    .pfbox:nth-child(even) .pfimg{
-        margin-left: 0;
-        
-    }
-}
+
 
 
 
@@ -919,7 +899,7 @@ input[type="radio"]{
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .portfolio{
-        height: 320vh;
+        height: auto;
     }
     .column {
         flex: 100%;
@@ -1025,7 +1005,7 @@ input[type="radio"]{
 
 .about{
     position: relative;
-    /* height: auto; */
+    height: auto;
     height: 950px;
     width: 100%;
     /* background: var(--highlights);
@@ -1217,10 +1197,10 @@ input[type="radio"]{
     padding-right: 30%;
 
 }
-.skillbox{
-    /* background: var(--bg); */
+/* .skillbox{
+    background: var(--bg);
     
-}
+} */
 
 .skillbox img{
     width: 60px;
@@ -1649,7 +1629,57 @@ input[type="radio"]{
     .main-text .button .btn2 {
         margin-top: 10px;
     }
+
+    #nav2 {
+        width: 80%;
+    }
+
+    #nav2 label{
+        font-size: 10px;
+    }
    
+
+    .pfbox 
+    {
+        flex-direction: column;
+    }
+
+    .pfbox:nth-child(even){
+        flex-direction: column;
+    }
+    .pfbox .pfimg{
+        margin-left: 0;
+        z-index: -1;
+
+    }
+
+    .pfbox .pfimg img{
+        width: 300px;
+        height: 300px;
+    }
+    .pfbox:nth-child(even) .pfimg{
+        margin-left: 0;
+        z-index: -1;
+        
+    }
+    .pfbox:nth-child(even) .pfimg img{
+        width: 320px;
+        height: 320px;
+    }
+
+    .pfbox .layer{
+        width: 90%;
+        height: auto;
+        margin-left: 0;
+        margin-top: -80px;
+    }
+
+    .pfbox:nth-child(even) .layer{
+        width: 90%;
+        height: auto;
+        margin-left: 0;
+        margin-top: -80px;
+    }
 }
 
 @media screen and (max-width: 640px)  {
@@ -1675,13 +1705,22 @@ input[type="radio"]{
     .text-box small{
         margin-bottom:10px;
     }
-    .contact{
+    .contact, .services-content{
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-left: 20px;
         padding-right: 20px;
     }
+    
+    .box{
+        width: 300px;
+    }
+
+    
+    
+  
+
     
 }
 
@@ -1695,6 +1734,45 @@ input[type="radio"]{
     .main-text h3{
         font-size: 4.5rem;
     } 
+
+    #nav2 {
+        width: 57%;
+    }
+    #nav2 label{
+        font-size: 14px;
+    }
+
+    .pfbox 
+    {
+        flex-direction: column;
+    }
+
+    .pfbox:nth-child(even){
+        flex-direction: column;
+    }
+    .pfbox .pfimg{
+        /* width: 60%; */
+        margin-left: 0;
+        z-index: -1;
+    }
+
+    .pfbox .layer{
+        width: 90%;
+        margin-left: 0;
+        margin-top: -150px;
+       
+    }
+
+    .pfbox:nth-child(even) .pfimg{
+        margin-left: 0;
+        z-index: -1;
+        
+    }
+    .pfbox:nth-child(even) .layer{
+        width: 90%;
+        margin-left: 0;
+        margin-top: -150px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1710,5 +1788,3 @@ input[type="radio"]{
 
 
    
-
-  
