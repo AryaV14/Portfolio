@@ -1583,6 +1583,41 @@ input[type="radio"]{
     0 0 5px var(--highlights),0 0 15px var(--highlights);
 }
 
+.success {
+    padding-top: 10px;
+    font-size: 20px;
+    width: 100%;
+    color: green;
+    position: absolute;
+    animation: buttons .3s linear;
+    text-align: center;
+    display: none;
+}
+.danger {
+    padding-top: 10px;
+    font-size: 20px;
+    width: 100%;
+    color: rgb(219, 2, 2);
+    position: absolute;
+    transition: .3s;
+    animation: buttons .3s linear;
+    text-align: center;
+    display: none;
+}
+
+@keyframes buttons {
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
 .end{
     height: 20vh;
     background: var(--grey3);

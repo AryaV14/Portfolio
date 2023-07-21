@@ -569,11 +569,13 @@
             </div>
             <div class="contact-form">
                 <form id="submit-form" action="">
-                    <input type="" name="name" placeholder="Enter Your Name" required>
-                    <input type="" name="email" placeholder="Enter Your Email" required>
+                    <input type="" name="name" id="name" placeholder="Enter Your Name" required>
+                    <input type="" name="email" id="email" placeholder="Enter Your Email" required>
                     <input type="" name="subject" placeholder="Enter Your Subject">
-                    <textarea name="message" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
-                    <input type="submit" value="Submit" class="send">
+                    <textarea name="message" id="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+                    <input type="submit" value="Submit" class="send" id="send" onclick="message()">
+                    <div class="success" id="success">Your Message Successfully Sent!</div>
+                    <div class="danger" id="danger">Something went wrong!</div>
                 </form>
             </div>
         </section>
@@ -591,12 +593,19 @@
             method:"post",
             success:function (response){
                 // alert("Form submitted successfully")
-                window.location.reload()
+                // window.location.reload()
+                setTimeout(function(){
+                window.location.reload();
+                }, 2000);
                 //window.location.href="https://google.com"
+                success.style.display = 'block';
             },
             error:function (err){
-                alert("Something Error")
-
+                // alert("Something Error")
+                danger.style.display = 'block';
+                setTimeout(function(){
+                    danger.style.display = 'none';
+                }, 2000);
             }
         })
     })
