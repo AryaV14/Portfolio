@@ -1143,7 +1143,7 @@ input[type="radio"]{
     height: auto;
     background: var(--grey2);
     text-align: center;
-    padding: 3%;
+    padding: 4%;
 }
 
 .skills h3{
@@ -1164,36 +1164,37 @@ input[type="radio"]{
     font-family: 'Poppins', sans-serif;
     font-weight:   350;
     font-size: 22px;
-    padding: 3%;
+    padding-top: 30px;
+    padding-bottom: 40px;
 
 }
 .set1{
-    height:auto;
-
+    /* height:auto; */
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    /* grid-template-columns: repeat(7, 1fr); */
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 1rem;
+    gap: 2rem;
     /* background: var(--grey3); */
-    padding-left: 15%;
-    padding-right: 15%;
-
+    padding-left: 10%;
+    padding-right: 10%;
+    
 }
 
 .set2{
-    height:auto;
-  
+    /* height:auto; */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    /* grid-template-columns: repeat(3, 1fr); */
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: .1rem;
+    gap: 2rem;
     /* background: var(--grey3); */
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 10%;
+    padding-right: 10%;
 
 }
 /* .skillbox{
@@ -1374,6 +1375,7 @@ input[type="radio"]{
 }
 .certi img{
     width:150px;
+    height: auto;
     /* border: 2px solid var(--highlights); */
     border-radius: 10px;
 }
@@ -1388,7 +1390,7 @@ input[type="radio"]{
 .doc h2{
     color: var(--bg);
     font-weight: 300;
-    font-size: 24px;
+    font-size: 20px;
 }
 .doc h4{
     font-size: 18px;
@@ -1710,14 +1712,32 @@ input[type="radio"]{
         line-height: 80px;
         padding-bottom: 20px;
     }
+    
+    .achievements h2 {
+        font-size: 26px;
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+   
+    .doc h2{
+        font-size: 16px;
+    }
+    .doc h4{
+        font-size: 12px;
+    }
+    .certi_btn {
+        width: 130px;
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 640px)  {
     
     .skillsets{
-        margin: 50px auto;
+        margin-bottom: 50px;
     }
     .timeline{
+        width: 100%;
         margin: 50px auto;
     }
     .timeline::after{
@@ -1725,7 +1745,7 @@ input[type="radio"]{
     }
     .container{
         width:100%;
-        padding-left: 80px;
+        /* padding-left: 80px; */
         padding-right: 25px;
     }
     .text-box{
@@ -1747,7 +1767,14 @@ input[type="radio"]{
         width: 300px;
     }
 
-    
+    .certi {
+       width: 90%;
+    }
+
+    /* .doc h2{
+        font-size: 24px;
+    } */
+
     
   
 
