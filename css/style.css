@@ -1585,7 +1585,7 @@ input[type="radio"]{
 
 .success {
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Poppins', sans-serif;
     width: 100%;
     color: green;
@@ -1596,7 +1596,7 @@ input[type="radio"]{
 }
 .danger {
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Poppins', sans-serif;
     width: 100%;
     color: rgb(219, 2, 2);
