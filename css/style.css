@@ -1006,12 +1006,11 @@ input[type="radio"]{
 .about{
     position: relative;
     height: auto;
-    height: 950px;
     width: 100%;
     /* background: var(--highlights);
     border-radius: 3px;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2); */
-    margin: 10% auto auto;
+    margin-top: 10%;
    background-image: linear-gradient(to top left, var(--highlights) ,var(--bg) ,transparent);
 
 }
@@ -1024,7 +1023,6 @@ input[type="radio"]{
 }
 .abt .images{
     display: flex;
-    
 }
 
 .abt img{
@@ -1099,9 +1097,10 @@ input[type="radio"]{
 }
 
 .about_text{
+    padding-top: 22%;
     padding-left: 8%;
     padding-right: 10%;
-    height: 300px;
+    height: auto;
     align-items: center;
     font-family: 'Poppins', sans-serif;
     color: var(--grey1);
@@ -1114,7 +1113,7 @@ input[type="radio"]{
 .about_text button{
     width: 170px;
     height: 50px;
-    margin-top: 3%;
+    margin-top: 10%;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 300;
@@ -1635,7 +1634,7 @@ input[type="radio"]{
     }
 
     #nav2 label{
-        font-size: 12px;
+        font-size: 14px;
     }
    
 
@@ -1802,6 +1801,15 @@ input[type="radio"]{
     #hamburger-nav {
         display: flex;
        
+    }
+
+    .abt{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .about_text{
+        padding-top: 10%;
     }
 } 
 
