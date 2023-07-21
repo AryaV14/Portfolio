@@ -1694,7 +1694,21 @@ input[type="radio"]{
     
     .pfbox .layer p{
         font-size:0.8rem;
+    }
+    .abt img {
+        width: 200px;
+    }
 
+    .abt .images .star1 {
+        top: 210px;
+    }
+    .abt .images i {
+        top: 195px;
+    }
+    .abt h2 {
+        font-size: 5rem;
+        line-height: 80px;
+        padding-bottom: 20px;
     }
 }
 
@@ -1791,6 +1805,12 @@ input[type="radio"]{
         margin-top: -150px;
         z-index: 0;
     }
+    .abt h2 {
+        line-height: 90px;
+        padding-bottom: 20px;
+    }
+
+    
 }
 
 @media screen and (max-width: 1200px) {
@@ -1802,7 +1822,6 @@ input[type="radio"]{
         display: flex;
        
     }
-
     .abt{
         display: flex;
         flex-direction: column;
@@ -1811,6 +1830,9 @@ input[type="radio"]{
     .about_text{
         padding-top: 10%;
     }
+
+    
+   
 } 
 
 
