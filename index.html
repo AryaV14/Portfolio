@@ -593,12 +593,12 @@
             method:"post",
             success:function (response){
                 // alert("Form submitted successfully")
+                success.style.display = 'block';
                 // window.location.reload()
                 setTimeout(function(){
                 window.location.reload();
                 }, 2000);
                 //window.location.href="https://google.com"
-                success.style.display = 'block';
             },
             error:function (err){
                 // alert("Something Error")
