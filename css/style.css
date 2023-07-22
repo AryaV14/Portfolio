@@ -1745,9 +1745,10 @@ input[type="radio"]{
         top: 195px;
     }
     .abt h2 {
-        font-size: 5rem;
+        font-size: 4rem;
         line-height: 80px;
         padding-bottom: 20px;
+    
     }
     
     .achievements h2 {
@@ -1893,6 +1894,7 @@ input[type="radio"]{
     }
     .about_text{
         padding-top: 10%;
+        padding-left: 0;
     }
 
     
