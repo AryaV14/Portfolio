@@ -1770,6 +1770,10 @@ input[type="radio"]{
         width: 130px;
         font-size: 12px;
     }
+
+    .skillbox img {
+        width: 48px;
+    }
 }
 
 @media screen and (max-width: 640px)  {
