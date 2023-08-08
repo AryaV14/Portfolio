@@ -142,7 +142,7 @@
 <section class="services" id="services">
     <div class="organize">
         <div class="title">
-            <h2>What do I do?</h2>
+            <h2>What I do?</h2>
             <!-- <h4>Better Design, Better Experience</h4> -->
         </div>
         
@@ -649,12 +649,13 @@
             data:$("#submit-form").serialize(),
             method:"post",
             success:function (response){
-                // alert("Form submitted successfully")
-                success.style.display = 'block';
+                
                 // window.location.reload()
                 setTimeout(function(){
                 window.location.reload();
-                }, 1000);
+                }, 600);
+                // alert("Form submitted successfully")
+                success.style.display = 'block';
                 //window.location.href="https://google.com"
             },
             error:function (err){
@@ -662,7 +663,7 @@
                 danger.style.display = 'block';
                 setTimeout(function(){
                     danger.style.display = 'none';
-                }, 2000);
+                }, 800);
             }
         })
     })
