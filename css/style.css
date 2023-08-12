@@ -1637,7 +1637,10 @@ input[type="radio"]{
     font-size: 16px;
     opacity: 40%;
 }
-
+.end i{
+    font-size: 18px;
+    align-items: center;
+}
 @media screen and (max-width: 420px) {
     .main-text{
         bottom: 20%;
