@@ -84,9 +84,27 @@
         <!-- <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat laudantium voluptatum, quia nesciunt, sapiente corrupti provident ab vel a, libero laboriosam sequi enim dolore non quas tempore. Facilis, alias veniam.</p> -->
     <div class="button">
         <a href="#contact"><button type="button" class="btn1">Get in touch<img src="images/right-arrow.png"></button> </a>
-        <a href="/Arya Vijayan CV(DESIGN).pdf" download="AryaVijayan_Resume"><button type="button" class="btn2">Download CV</button> </a>
+        <button type="button" class="btn2" onclick="openPopup()">Download CV</button>
+        <div class="popup" id="popup">
+            <h2>Dowload CV</h2>
+            <a href="/Arya Vijayan Resume(Developer).pdf" download="AryaVijayanCV_Developer"><button type="button" class="btn2">Developer</button></a>
+            <a href="/Arya Vijayan CV(DESIGN).pdf" download="AryaVijayanCV_Designer"><button type="button" class="btn2">Designer</button></a>
+            <p><button type="button" class="closebtn" onclick="closePopup()">Close</button></p>
+        </div>
+        <script>
+            let popup = document.getElementById("popup");
+           
+            function openPopup(){
+                popup.classList.add("openpopup");
+            }
+           
+            function closePopup(){
+                popup.classList.remove("openpopup");
+            }
+           
+           </script>
     </div>
-    
+   
     </div>
     
     <!-- <div class="scroll_text">
@@ -104,6 +122,7 @@
        
     </div> -->
 </section>
+
 
 <section class="scroll" style="background-image: url(images/home.png);" >
     <div class="text_wrapper">
@@ -395,7 +414,26 @@
                         <p>
                             I actively engage in continuous learning to expand my knowledge and enhance my proficiency in the field, bringing ideas to life through functional and seamless digital solutions. Whether it's coding with finesse or designing with pixel-perfection, I'm always up for the challenge.
                         </p>
-                        <a href="/Arya Vijayan CV(DESIGN).pdf" download="AryaVijayan_Resume"><button>Download CV</button></a>
+                      
+                        <button type="button" class="btn1" onclick="openPopup()">Download CV</button>
+                        <div class="popup" id="popup">
+                            <h2>Dowload CV</h2>
+                            <a href="/Arya Vijayan Resume(Developer).pdf" download="AryaVijayanCV_Developer"><button type="button" class="btn2">Developer</button></a>
+                            <a href="/Arya Vijayan CV(DESIGN).pdf" download="AryaVijayanCV_Designer"><button type="button" class="btn2">Designer</button></a>
+                            <p><button type="button" class="closebtn" onclick="closePopup()">Close</button></p>
+                        </div>
+                        <script>
+                            let popup = document.getElementById("pop_up");
+                        
+                            function openPopup(){
+                                popup.classList.add("openpopup");
+                            }
+                        
+                            function closePopup(){
+                                popup.classList.remove("openpopup");
+                            }
+                        
+                        </script>
                     </div>
                     <!-- <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, natus!</h4> -->
                 </div> 
@@ -815,6 +853,7 @@
 
     requestAnimationFrame(raf)
 </script>
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
