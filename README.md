@@ -2,4 +2,4 @@
 ### Check out my portfolio here⬇️ 
 
  
-www.aryavijayan.tech
+aryav14.github.io/Portfolio/
